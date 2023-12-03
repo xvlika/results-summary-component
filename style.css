@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Red+Hat+Display:wght@500;900&display=swap');
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+#resultBox{
+    border-radius: 0px 0px 32px 32px;
+    background: var(--gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+    height: 44%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+#yourRes{
+    color: var(--light-blue, #CAC9FF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#ball{
+    height: 140px;
+    width: 140px;
+    border-radius: 140px;
+    background-image: url(./pics/Oval.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#score{
+    color: var(--white, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;          
+    display: flex;
+    flex-direction: column;
+}
+#maxscore{
+    color: var(--light-blue, #CAC9FF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#grade{
+    color: var(--light-blue, #CAC9FF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#description{
+    color: var(--light-blue, #CAC9FF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 58px;
+    margin-right: 58px;
+}
+#summary{
+    margin-right: 262px;
+    color: var(--dark-navy, #303B59);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+.summaryBox{
+
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.allComp{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.summaryComponents{
+    width: 315px;
+    height:56px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.componentImg{
+    height: 20px;
+    display: flex;
+    align-self: center;
+}
+.compName{
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+}
+.compName.reaction{
+    color: var(--red, #F55);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.compBox1{
+    display: flex;
+}
+.compGrades{
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    color: var(--dark-navy, #303B59);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.from{
+    color: var(--dark-navy, #646c85);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.compName.memory{
+    color: var(--yellow, #FFB21E);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.compName.verbal{
+    color: var(--green, #00BB8F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.compName.visual{
+    color: var(--blue, #1125D6);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#conti{
+    width: 315px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 128px;
+    background: var(--dark-navy, #303B59);
+    align-self: center;
+}
+#contiTxt{
+    color: var(--white, #FFF);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 17px;
+}
+@media (min-width:800px){
+    *{
+        margin: 0px;
+    }
+    body{
+        background: var(--Very-Light-blue, #ECF2FF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    #mainContainer{
+        background: var(--White, #FFF);
+        width: 736px;
+        padding-right: 50px;
+        border-radius: 32px;
+        height: 512px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #summary{
+        margin-right:0px ;
+    }
+    #conti{
+        border-radius: 128px;
+        border-radius: 128px;
+        background: var(--dark-navy, #303B59);        
+        width: 288px;
+        height: 56px;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    #conti:active{
+        transform: scale(0.94);
+        background: var(--gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+    }
+    .allComp{
+        margin-top: 97px;
+    }
+    #ball{
+        margin-top: 37px;
+    }
+    #grade{
+        margin-top: 28px;
+    }
+    #description{
+        margin-top: 14px;
+    }
+    #resultBox{
+        width: 368px;
+        height: 512px;
+        border-radius:32px;
+    }
+}
